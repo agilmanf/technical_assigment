@@ -1,0 +1,37 @@
+// Soal ///////////////////////////////////////////
+1. Apa perbedaan antara static web server dan dynamic web server?
+2. Jelaskan arsitektur static site dan dynamic site
+3. Apa saja yang dapat kita buat pada sisi server?
+4. Mohon jelaskan apa itu RESTful?
+5. Apa saja jenis HTTP verbs yang ada (jelaskan fungsinya masing-masing)?
+6. Apa fungsi dari Response Codes?
+
+// Jawaban //////////////////////////////////////
+1.  Perbedaannya jika web server statis dia mengirimkan file hosting apa adanya ke browser, sedangkan web server dinamis
+    dia memiliki software tambahan biasanya berupa aplikasi server dan database, sehinggan kita bisa meng-update / mengatur
+    data yang akan dikirimkan ke browser.
+
+2.  -   Static Web Server Architecture, ketika browser melakukan HTTP Request, web server akan mengambil file dari penyimpanannya lalu 
+        me-respon / memberikan file yang diminta browser tanpa memprosesnya terlebih dahulu. Apa yang diminta sama dengan apa yang diberi.
+
+    -   Dynamic Web Server Architecture, web server dinamis dibangun tidak hanya oleh browser dan web server saja
+        namun dalamnya ada web applicaton dan database. Setelah browser melakukan HTTP request dari web server
+        request data akan diolah oleh web application akan dilakukan URL encoding, dilihat apakah akan get/post data. 
+        Dan Web Application ini yang akan berkomunikasi dengan database untuk melakukan entah update, create, delete atau
+        read sesuai request yang diminta. Data yang sudah diupdate akan dibungkus oleh web application dengan file-file
+        web html,css,js. respon yang diberikan ke browser sudah berupa file html.
+
+3.  RESTful APIs, Single Page Application, atau web app yang memerlukan realtime seperti chat, collaboration app dll
+
+4.  REST adalah singkatan dari REpresentational State Transfer. Merupakan standard dalam arsitektur web yang menggunakan
+    Protocol HTTP untuk pertukaran data. Cara kerjanya, REST server menyediakan jalur untuk akses resource atau data,
+    sedangkan REST client melakukan akses resource dan kemudian menampilkan atau menggunakannya. Resource yang dihasilkan
+    sebenarnya berupa teks, namun formatnya bisa bermacam-macam tergantung keinginan developer, umumnya adalah JSON dan XML.
+
+5.  -   GET adalah metode HTTP Request yang paling simpel, metode ini digunakan untuk membaca atau mendapatkan data dari sumber.
+    -   POST adalah metode HTTP Request yang digunakan untuk membuat data baru dengan menyisipkan data dalam body saat request dilakukan.
+    -   PUT adalah metode HTTP Request yang biasanya digunakan untuk melakukan update data resource.
+    -   DELETE adalah metode HTTP Request yang digunakan untuk menghapus suatu data pada resource.
+
+6.  Untuk menginformasikan hasil request kepada client, apakah request berhasil, ataukah mengalami kesalahan disisi client atau
+    terjadi kesalahan disisi server. Sehingga client tidak bingung.

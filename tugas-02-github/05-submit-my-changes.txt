@@ -1,0 +1,19 @@
+1. Fork repository GitHub https://github.com/impactbyte/tech4impact-students-bio.git menggunakan akun Github
+2. git clone https://github.com/agilmanf/tech4impact-students-bio.git, cd tech4impact-students-bio
+3. git banch gilman-firdaus
+4. git checkout gilman-firdaus
+5. touch gilmanfirdaus.md
+6. - nano gilmanfirdaus.md
+   - isi "Nama Lengkap : Gilman Firdaus
+          Umur : 27
+          Pesan yang ingin disampaikan : Jangan menyerah meskipun susah tetaplah semangat"
+   - save and exit dengan ctrl+x,y,enter
+7. git add gilmanfirdaus.md
+8. git commit -m "gilmanfirdaus.md"
+9. - git checkout master
+   - git merger gilman-firdaus
+10. git push origin -only master
+11. - buka https://github.com/agilmanf/tech4impact-students-bio di browser
+    - masuk ke menu pull request, klik new pull request
+    - klik create pull request, dan masukan pesan
+    - lalu klik tombol create pull request

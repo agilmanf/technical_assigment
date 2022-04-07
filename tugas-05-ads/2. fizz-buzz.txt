@@ -1,0 +1,14 @@
+BEGIN
+    STORE n with number
+    SET i = 0
+    WHILE i <= n
+        if i % 3 = 0
+            DISPLAY "Fizz"
+        else if i % 5 = 0
+            DISPLAY "Buzz"
+        else if i % 3 = 0 and i % 5 = 0
+            DISPLAY "FizzBuzz"
+        else
+            DISPLAY i
+        i += 1
+END

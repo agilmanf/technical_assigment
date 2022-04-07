@@ -1,0 +1,11 @@
+1.to remove useless files or files that git doesn't recognize. for example files without extensions or files with strange extensions
+2. -d for remove unnecessary directory, -f for force remove
+3. git branch "branch name"
+4. - fast forward, merging 2 branches, and we are only working on the second branch and not adding commits on the master branch. so that when merged there is no conflict.
+   - recursive merge, A three-way merge involves three snapshots. Two are the ones that are involved in a two-way merge, and the third one is the base file or the common ancestor with which these two files will be compared.
+5. git checkout "brach name"
+6. git add -u
+7. git branch -d "branch name"
+8. git diff, compare the changes that just made with the last commit. or comparing the differences between commit/branch.
+9. using git reset
+10. when two separate branches have made edits to the same line in a file

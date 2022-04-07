@@ -1,0 +1,40 @@
+1. mkdir gilman-firdaus, cd gilman-firdaus
+2. - touch README.md
+   - nano README.md
+   - ketik "Halo perkenalkan aku halaman utama"
+   - exit & save dengan ctrl+x,y,enter
+3. - git init .
+   - git add .
+   - git commit -m "Inisialisasi Git Repository" //maaf saya salah, di repository asli pesannya malah "Adding README.md"
+4. git branch cv
+5. - git checkout cv
+   - touch cv.txt
+   - nano cv.txt
+   - ketik "Ini adalah file CV"
+   - exit & save dengan ctrl+x,y,enter
+6. - git add cv.txt
+   - git commit -m "Inisialisasi CV"
+7. - touch google.md
+   - git add google.md
+   - git commit -m "Menambahkan perusahaan pertama - Google"
+   - touch apple.md
+   - git add google.md
+   - git commit -m "Menambahkan perusahaan kedua - Apple"
+   - touch google.md
+   - git add Microsoft.md
+   - git commit -m "Menambahkan perusahaan Ketiga - Microsoft"
+8. checkout master
+9. - nano README.txt
+   - tambahkan "Ini adalah update pertama pada branch master"
+   - exit & save dengan ctrl+x,y,enter
+   - git add README.md
+   - git commit -m "update master pertama"
+10.- git merge cv
+   - //otomatis text editor kebuka lalu isikan pesan commit merge, defaultnya Merger branch 'cv', jika sudah save & exit
+11.- git remote add origin https://github.com/agilmanf/technical-assigment-git-and-github.git
+   - git branch -M main
+   - git push -u origin main
+
+
+
+

@@ -1,0 +1,1 @@
+Technical Assigment - MySQL Basic - Gilman Firdaus

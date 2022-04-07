@@ -1,0 +1,19 @@
+Soal 1
+
+1.  Apa itu localStorage?
+2.  Apa itu cookies?
+3.  Apa perbedaan antara localStorage dan sessionStorage?
+
+Jawaban
+
+1.  LocalStorage adalah data yang dikirim dari situs web dan disimpan di komputer kita
+    oleh web browser saat kita menjelajah. dan maksimal penyimpanannya hanya 5MB
+
+2.  Cookies sama seperti localstorage yaitu data kecil yang dikirim dari situs web dan disimpan 
+    di komputer. Disebut data kecil karena maksimum data yang dapat disimpan dalam cookies 
+    adalah 4096 bytes (4 KB). Dan juga yang membedakan dengan localstorage, cookies memiliki
+    tanggal kadaluarsa
+
+3.  Perbedaannya jika localstorage datanya akan permanen tersimpan dalam komputer kita (tidak expired)
+    selama kita tidak menghapusnya. sedangkan sessionStorage datanya akan hilang ketika kita menutup
+    browser.

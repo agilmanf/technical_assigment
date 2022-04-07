@@ -1,0 +1,30 @@
+/* ide dari program dibawah yaitu membandingkan antar huruf dari sebuah string.
+cara yang saya lakukan yaitu membandingkan index huruf pertama dengan
+index huruf terakhir dicek satu persatu. Mohon maaf jika penulisanya malah
+seperti javascript karena saya bingung jika menulisnya dengan murni pseudocode.
+Oh iya dan indexnya saya mulai dari 1 bukan dari 0 seperti javascript */
+
+BEGIN
+    STORE 'str' with string
+    SET stringLength = str.length
+    SET firstCharIndex = 1
+    SET lastCharIndex = stringLength
+
+    WHILE firstCharIndex < lastCharIndex
+        // if disini untuk cek apabila ada spasi maka lanjut ke index huruf berikutnya
+        if str.charAt(firstCharIndex) = " "
+            firstCharIndex += 1
+        else if str.charAt(lastCharIndex) = " "
+            lastCharIndex -= 1
+        else
+            if str.charAt(firstCharIndex) = str.charAt(lastCharIndex)
+                SET firstCharIndex += 1
+                SET lastCharIndex -= 1
+                if firstCharIndex = lastCharIndex
+                    DISPLAY "TRUE"
+            else if str.charAt(firstCharIndex) != str.charAt(lastCharIndex)
+                DISPLAY "FALSE"
+                END
+END
+
+        

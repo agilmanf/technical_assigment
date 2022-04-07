@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow&family=Sansita&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./style/utilities.css">
+    <link rel="stylesheet" href="./style/profil.css" />
+
+    <title>Checkout - Pasar Ikan</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-blue px-4 shadow">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="index.html">Pasar Ikan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="produk.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="404.html">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="404.html">Kontak</a>
+                    </li>
+                    <li class="nav-item d-none button-masuk">
+                        <button class="btn btn-warning">
+                  <a href="login.html">Masuk</a>
+                </button>
+                    </li>
+                    <li class="nav-item dropdown user-element">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="user">Hello User</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="profil.html">Profil</a></li>
+                            <li><a class="dropdown-item" href="profil.html">Transaksi</a></li>
+                            <li><a class="dropdown-item logout" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><img src="./img/cart.png" alt=""></a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav -->
+
+    <div class="container">
+        <h2 class="text-title text-center mt-4">Profile</h2>
+        <div class="box p-3 mt-4">
+            <div class="row px-3">
+                <ul class="menu">
+                    <li><a class="active" href="#">Biodata Diri</a></li>
+                    <li><a href="#">Transaksi</a></li>
+                </ul>
+                <hr class="mt-1">
+            </div>
+            <div class="row mx-2 mt-4">
+                <div class="col-lg-3 me-4 d-flex flex-column align-items-center">
+                    <img class="img-thumbnail rounded d-block mb-4 mt-3" src="./img/profile.jpg" alt="profil">
+                    <input class="foto" type="file" accept="image/png, image/gif, image/jpeg" disabled style="opacity: 0.7;" />
+                </div>
+                <div class="col-lg-8 data-diri">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h5>Nama Lengkap</h5>
+                        </div>
+                        <div class="col-lg-8">
+                            <input class="inputan" id="nama" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h5>Tanggal Lahir</h5>
+                        </div>
+                        <div class="col-lg-8">
+                            <input class="inputan" id="tanggal" type="date" value="2000-01-01">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h5>Jenis Kelamin</h5>
+                        </div>
+                        <div class="col d-flex gender">
+                            <div class="me-5 gender">
+                                <input name="gender" id="laki" type="radio" value="laki">
+                                <label for="laki">Laki - laki</label>
+                            </div>
+                            <div>
+                                <input name="gender" id="perempuan" type="radio" value="perempuan">
+                                <label for="perempuan">Perempuan</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h5>Alamat</h5>
+                        </div>
+                        <div class="col-lg-8">
+                            <textarea class="inputan" name="alamat" id="alamat" cols="30" rows="6"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h5>Email</h5>
+                        </div>
+                        <div class="col-lg-8">
+                            <input class="inputan" id="email" type="email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h5>No. Handphone</h5>
+                        </div>
+                        <div class="col-lg-8">
+                            <input class="inputan" id="hp" type="number">
+                        </div>
+                    </div>
+                    <div class="row justify-content-end px-3"><button class="edit btn-blue">Ubah Data</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-5">
+        <hr>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer">
+        <div class="row info justify-content-center align-content-center">
+            <div class="col text-center">
+                <div class="row justify-content-center">
+                    <a class="brand" href="index.html">Pasar Ikan</a>
+                    <p>Jl. Kejaksaan Iv Blok E/96 Pondok Bambu, Jakarta Timur 13430
+                        <br>(021) 860 3643 | kontak@tokoikan.com</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 d-flex justify-content-around social">
+                        <a href="#"><img src="./img/fb-icon.png" alt=""></a>
+                        <a href="#"><img src="./img/ig-icon.png" alt=""></a>
+                        <a href="#"><img src="./img/g-icon.png" alt=""></a>
+                        <a href="#"><img src="./img/t-icon.png" alt=""></a>
+                        <a href="#"><img src="./img/y-icon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row copy justify-content-center align-content-center">
+            © Copyright Kelompok 2 &nbsp<a href="https://github.com/agilmanf" target="_black">@gilman</a>&nbsp<a href="https://github.com/lucionexus" target="_blank">@reyshan</a>&nbsp 2022
+        </div>
+    </div>
+
+    <!-- End of Footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <script src="./script/profil.js" type="module"></script>
+    <script src="./script/loginChecker.js"></script>
+</body>
+
+</html>

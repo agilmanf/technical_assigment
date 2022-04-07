@@ -1,0 +1,13 @@
+BEGIN
+    STORE 'nilai' with a number
+    SET grade = 0
+
+    if nilai < 70
+        SET grade = nilai
+    else 
+        if nilai % 5 > 2
+            SET grade = nilai + (5 - nilai % 5)
+        else
+            SET grade = nilai
+    DISPLAY grade
+END

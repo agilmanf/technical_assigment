@@ -1,0 +1,45 @@
+body {
+    min-height: 100vh;
+    color: white;
+    background: rgb(99, 189, 255);
+    background: linear-gradient(140deg, rgba(99, 189, 255, 1) 0%, rgba(42, 121, 188, 1) 50%, rgba(7, 53, 96, 1) 90%);
+}
+
+.main {
+    margin: 0 5vw;
+}
+
+.main .row {
+    min-height: 90vh;
+}
+
+.main img {
+    width: 52%;
+    max-width: 800px;
+    position: absolute;
+    right: 5%;
+    bottom: 39vh;
+}
+
+.main .left-content {
+    margin-top: 10vh;
+}
+
+.main h1 {
+    font-size: 60px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
+}
+
+.main h4 {
+    font-size: 20px;
+}
+
+.btn-belanja {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FBD337;
+    color: #676425;
+}

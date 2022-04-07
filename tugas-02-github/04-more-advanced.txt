@@ -1,0 +1,11 @@
+1. - The git reset command can undo the commit we made and return the HEAD pointer to the previous commit, it will discards the changes made. This command makes us unable to return to future commits.
+- git revert, revert means to return. This command is safer than git reset, as it will not delete commit history. revert will take the condition files that existed in the past, then merge them with the last commit.
+- Git Revert is usually done when the commit has been pushed to remote repo. Git Reset is usually done locally when the commit has not been pushed.
+
+2. - The differences is, Git merge is a command that merges two or more branches of commit history. by making a new commit. but if Git rebase is another alternative to merge which is used to integrate another branch with the one you are currently working on, except it keeps a linear commit history.
+- If we are working in a repository with few branches, for example there are only 2-3 branches, we should use merge. On the other hand, if the repository will have many branches, we should use the rebase process.
+
+3. - git stash pop applies the top stashed element and removes it from the stack. git stash apply does the same, but leaves it in the stash stack.
+   - git stash pop is used when we are sure of our code and want to fix it to the correct branch. while git stash pop apply is used when we are not sure about our code.
+
+4. pick, reword, squash, drop, reorder

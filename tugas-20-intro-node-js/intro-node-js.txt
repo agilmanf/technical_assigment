@@ -1,0 +1,34 @@
+// Soal  ///////////////////////////////////////////
+1. Mohon jelaskan apa itu Node.js? Apa perbedannya dengan JavaScript?
+2. Mohon jelaskan arsitektur dari Node.js?
+3. Apa perbedaan antara Built-in Module, External Module, dan Custom Module pada Node.js?
+4. Sebutkan salah satu contoh dari Built-in Module, External Module, dan Custom Module pada Node.js?
+
+
+// Jawaban ////////////////////////////////////////
+1.  Node.js adalah sebuah runtime yang memungkinkan kita menjalankan script JavaScript diluar browser.
+    sedangkan JavaScript adalah sebuah bahasa pemrograman, yang biasanya hanya bisa di jalankan didalam browser.
+
+2.  a.  Node.js dibangun diatas mesin v8 Google.  Ini adalah mesin javascript tercepat. Mesin V8 mengubah kode javascript
+        menjadi kode mesin yang benar-benar dipahami oleh komputer. Hasilnya kemudian dibuat dan dikembalikan ke node.js.
+        Node.js tidak dapat memahami kode javascript yang kita tulis tanpa V8.
+
+    b.  Libuv Library, Library C++ ini bertugas mengelola operasi asynchronous I/O (input/output) di Node.js dan main event loop.
+        Di dalamnya juga terdapat thread pool reserve yang menangani thread setiap operasi I/O.
+
+    c.  Design Pattern, Ada dua jenis design pattern yang digunakan oleh Node.js, yaitu object pool dan facade. Berikut penjelasannya:
+        -   Object pool — design pattern berisi kumpulan objek yang dapat digunakan untuk task tertentu
+        -   Facade — design pattern yang memberikan tampilan antarmuka untuk body kode
+
+3.  - Built-in Module atau Core Module adalah module inti bawaan dari node.js, karena node.js merupakan framework yang ringan didalam
+      core module lah node.js menyimpan fungsi fungsi utamanya.
+
+    - Eksternal Module adalah modul tambahan diluar modul - modul inti yang dimiliki node.js , untuk menggunakannya harus menginstall dulu
+      lewat npm / yarn. Biasanya dibuat oleh Javascript Community adapun tujuannya untuk mempermudah developer dalam mengembangkan aplikasi.
+      Dan juga bisa menghemat waktu karena kita tidak perlu membuat manual fungsi yang dibutuhkan, tinggal install module.
+
+    - Custom Module adalah modul yang kita buat sendiri
+
+4.  Built-in Module : fs, http, os
+    External Module : express, validator, yargs, moment
+    Custom Module : modul yang kita buat sendiri contohnya: product, user, contact dll

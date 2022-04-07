@@ -1,0 +1,42 @@
+1. mkdir gilman-firdaus
+2. mkdir gilman-firdaus/sekolah
+3. mkdir gilman-firdaus/kerja
+4. cd gilman-firdaus/sekolah/
+5. touch ijazah.txt
+6. nano ijazah.txt
+
+// setelah masuk nano ketik :
+"Perkenalkan namaku Gilman Firdaus
+Aku berasal dari Bandung
+Salam Kenal :D"
+//lalu exit nano dengan ctrl+x ,y , enter
+
+7. cat ijazah.txt
+8. touch portofolio.txt
+9. nano portofolio.txt
+
+// setelah masuk nano ketik :
+Saya pernah bekerja pada beberapa perusahaan salah satu diantaranya ialah
+
+- Tokopedia
+- Microsoft
+- Google
+//lalu exit nano dengan ctrl+x ,y , enter
+
+10. cd ..
+11. cd kerja
+12. touch cv.txt
+13. nano cv.txt
+
+// setelah masuk nano ketik :
+Salam,
+
+Perkenalkan namaku Gilman Firdaus, saya memiliki kegemaran
+- Musik
+- Basket
+- Game
+//lalu exit nano dengan ctrl+x ,y , enter
+
+14. cat cv.txt
+15. mv ../sekolah/portofolio.txt ./
+
